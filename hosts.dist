@@ -1,0 +1,1 @@
+nextcloud ansible_host=<server_ip> ansible_user=ubuntu ansible_connection=ssh

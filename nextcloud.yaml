@@ -1,6 +1,6 @@
 ---
 - name: Nextcloud
-  hosts: server
+  hosts: nextcloud
 
   tasks:
     - name: Timezone Moscow
@@ -60,5 +60,5 @@
       become: true
       become_user: postgres
       community.postgresql.postgresql_db:
-        name: pguser
-        owner: pgpassword
+        name: dbnextcloud
+        owner: pguser
